@@ -1,0 +1,401 @@
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  background: #f3f5f9;
+}
+
+h1 {
+  color: #4f4f4f;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* contacts-section */
+
+.contacts-section {
+  position: absolute;
+  top: 35px;
+  right: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.telegram-icon,
+.viber-icon,
+.phone-link-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.viber-icon,
+.telegram-icon {
+  margin-right: 15px;
+}
+
+.phone-link-icon {
+  margin-right: 15px;
+}
+
+.telegram-link,
+.viber-link,
+.phone-link-icon,
+.phone-link-number {
+  text-decoration: none;
+}
+
+.phone-link-number {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+/* experience-section */
+
+.my-projects-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e71a1a;
+  font-style: bold;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.experience-section {
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-photo {
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.linkedin-icon {
+  margin-right: 15px;
+}
+
+.experience-description {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.experience-description-text {
+  text-align: center;
+}
+.experience-description-text-first {
+  margin-bottom: 8px;
+}
+
+.technologise {
+  margin-bottom: 50px;
+}
+.js-icon,
+.react-icon {
+  margin-right: 15px;
+}
+
+/* MY INFO section */
+
+.my-info-section {
+  width: 33%;
+  margin: 0 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.my-profession {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 35px;
+}
+
+.my-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.my-location,
+.my-work-freelance {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background: #2f80ed;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.my-work-freelance {
+  margin-bottom: 100px;
+}
+
+.my-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  margin-bottom: 15px;
+}
+
+.my-skills-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.skills-item {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2f80ed;
+}
+
+.skills-list {
+  list-style: disc;
+  padding-left: 15px;
+}
+
+.skills-text {
+  color: #4f4f4f;
+}
+
+/* PROJECT FORM */
+
+.project-price-section {
+  width: 33%;
+}
+
+.project-price-form {
+  padding: 40px;
+  background: #fffafa;
+  border-radius: 16px;
+  /* box-sizing: border-box; */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-tipe-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+  margin-bottom: 30px;
+}
+
+.project-price-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2f80ed;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.project-price-form-field-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.project-price-select {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 8px;
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+.activity-tipe-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.activity-tipe-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.activity-tipe-title {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4f4f4f;
+}
+
+.activity-tipe-checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.project-price-sum {
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.project-price-containet {
+  margin-bottom: 30px;
+}
+
+.project-price-sum-currency {
+  color: #2f80ed;
+}
+
+.project-price-calculate-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background: #2f80ed;
+  border-radius: 20px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.project-price-calculate-btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+/* MODAL */
+
+.modal-active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal-bgd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(51 51 51 / 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  pointer-events: none;
+  opacity: 0;
+}
+
+.modal-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.08);
+  padding: 110px 40px;
+  width: 364px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  position: relative;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #2f80ed;
+  margin-bottom: 40px;
+}
+
+.user-email-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  width: 100%;
+}
+
+.modal-container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.user-email {
+  margin-bottom: 115px;
+  width: 100%;
+  font-family: Montserrat, Arial, sans-serif;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #4f4f4f;
+}
+
+.modal-submit-btn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  background: #2f80ed;
+  border-radius: 20px;
+  padding: 12px 32px 12px 32px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.modal-icon {
+  margin-bottom: 35px;
+}
+.modal-close-btn {
+  border: none;
+  outline: none;
+  background: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/* Modal 2 */
+
+.modal-success-message {
+  justify-content: center;
+}
+
+.success-icon {
+  margin-bottom: 35px;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!--  CONTACTS SECTION -->
+
+        <section class="contacts-section">
+            <a href="" class="telegram-link">
+                <img src="./img/icons/viber-icon.svg" alt="telegram-link" class="telegram-icon">
+            </a>
+            <a href="" class="viber-link">
+                <img src="./img/icons/telegram-icon.svg" alt="viber-link" class="viber-icon">
+            </a>
+            <a href="tel:+380937917855" class="phone-link-icon">
+                <img src="./img/icons/phone-icon.svg" alt="phone-link-icon" class="phone-link-icon">
+            </a>
+            <a href="tel:+380937917855" class="phone-link-number">
+                +380937917855
+            </a>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+
+        <section class="experience-section">
+            <img class="my-photo" src="./img/my-photo.jpg" alt="My photo">
+            <div>
+                <a href="https://fonts.google.com/"><img class="icon linkedin-icon" src="./img/icons/linkedin-icon.svg"
+                        alt="My linkedin link"></a>
+                <a href="https://https://www.facebook.com/"> <img class="icon" src="./img/icons/fb-icon.svg"
+                        alt="My facebook link"></a>
+            </div>
+
+            <div class="experience-description">
+                <p class="experience-description-text experience-description-text-first">32 готовых проэкта</p>
+                <p class="experience-description-text">2 года опыта</p>
+            </div>
+
+            <div class="technologise">
+                <img src="./img/icons/js-icon.svg" alt="Java screept" class="js-icon">
+                <img src="./img/icons/react-icon.svg" alt="React" class="react-icon">
+                <img src="./img/icons/nodejs-icon.svg" alt="Node JS">
+            </div>
+
+            <a class="my-projects-link" href="https://github.com/">Мои работы</a>
+        </section>
+
+        <!-- MY INFO SECTION -->
+
+        <section class="my-info-section">
+            <h2 class="my-name">Привет! Я - Ира Дяченко</h2>
+
+            <h1 class="my-profession">Я делаю <br> сайты</h1>
+            <p class="my-location">Живу на Бали</p>
+            <p class="my-work-freelance">Работаю удаленно</p>
+            <p class="my-description">Я - человек-оркестр. В одиночку заменяю целую веб-студию. </p>
+
+            <div>
+                <p class="my-skills-title">Умею:</p>
+                <ul class="skills-list">
+                    <li class="skills-item">
+                        <p class="skills-text"> Управлять IT-проектами и командами;</p>
+                    </li>
+                    <li class="skills-item">
+                        <p class="skills-text"> Senior Front End разработчик;</p>
+
+                    </li>
+                    <li class="skills-item">
+                        <p class="skills-text"> Middle Back End разработчик;</p>
+
+                    </li>
+                    <li class="skills-item">
+                        <p class="skills-text"> Могу проконтролировать качество своего или вашего проекта, как QA -
+                            специалист.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- PROJECT PRICE -->
+
+        <section class="project-price-section">
+
+            <form action="#" class="project-price-form" method="POST" name="contact" data-netify="true"
+                id="project-price-form">
+                <h4 class="project-price-title">Расчитать стоимость проэкта</h4>
+
+                <div class="project-tipe-container">
+                    <label for="project-tipe" class="project-price-form-field-title">Тип сайта</label>
+                    <select name="project-tipe" id="project-tipe" class="project-price-select">
+
+                        <option selected value="landing-page">Landing page</option>
+                        <option value="online-store">Online store</option>
+                        <option value="web-application">Web application</option>
+                        <option value="mobile-application">Mobile application</option>
+                    </select>
+                </div>
+
+                <div class="activity-tipe-container">
+                    <p class="project-price-form-field-title">Тип работ</p>
+
+                    <div class="activity-tipe-item">
+                        <input type="checkbox" name="project-menegment" id="project-menegment"
+                            class="activity-tipe-checkbox">
+                        <label for="project-menegment" class="activity-tipe-title">Project menegment</label>
+                    </div>
+
+                    <div class="activity-tipe-item">
+                        <input checked type="checkbox" name="design" id="design" class="activity-tipe-checkbox">
+                        <label for="design" class="activity-tipe-title">Design</label>
+                    </div>
+
+                    <div class="activity-tipe-item">
+                        <input type="checkbox" name="development" id="development" class="activity-tipe-checkbox">
+                        <label for="development" class="activity-tipe-title">Development</label>
+                    </div>
+                    <div class="activity-tipe-item">
+                        <input type="checkbox" name="qa" id="qa" class="activity-tipe-checkbox">
+                        <label for="qa" class="activity-tipe-title">QA</label>
+                    </div>
+
+
+
+                    <div class="project-price-containet">
+                        <p class="project-price-form-field-title">Тип работ</p>
+                        <p class="project-price-sum"><span class="project-price-sum-currency">$</span> <span
+                                id="total-price">0</span></span></p>
+                    </div>
+
+                    <div class="project-price-calculate-btn-containet">
+                        <button class="project-price-calculate-btn">Отправить запрос</button>
+                    </div>
+            </form>
+        </section>
+    </div>
+
+
+    <!-- MODAL SECTION -->
+    <div class="modal-bgd modal-active">
+
+        <div class="modal-container">
+            <button class="modal-close-btn">
+                <img src="./img/icons/close-icon.svg" alt="">
+            </button>
+            <img src="./img/icons/mail-icon.svg" alt="mail-icon" class="modal-icon">
+            <h4 class="modal-title">Я свяжусь с Вами на <br> протяжении
+                одного часа</h4>
+
+            <form action="#" class="modal-container-form">
+                <label for="user-email" class="user-email-title">Email</label>
+                <input type="email" name="user-email" id="user-email" class="user-email" placeholder="Укажите emil">
+
+
+                <button type="submit" class="modal-submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="modal-bgd ">
+
+        <div class="modal-container">
+            <button class="modal-close-btn">
+                <img src="./img/icons/close-icon.svg" alt="">
+            </button>
+
+            <img src="./img/icons/success-icon.svg" alt="success-icon" class="success-icon">
+            <p class="modal-success-message"> Все отлично <br>Запрос отправлен</p>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
