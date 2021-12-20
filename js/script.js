@@ -78,5 +78,19 @@ function calculateWork() {
 getFormValues();
 
 const formEl = document.querySelector("#project-price-form");
+const emailModal = document.querySelector("#modal-email");
 
-formEl.addEventListener("change", getFormValues);
+// console.log(emailModal);
+
+formEl.addEventListener("change", calculateWork);
+
+formEl.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  emailModal.classList.add('modal-active';)
+});
+
+const closeButtons = document.querySelectorAll('.modal-close-btn');
+
+console.log(closeButtons);
+// formEl.addEventListener("change", getFormValues);
