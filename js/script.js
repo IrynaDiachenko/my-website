@@ -79,7 +79,7 @@ getFormValues();
 
 const formEl = document.querySelector("#project-price-form");
 const emailModal = document.querySelector("#modal-email");
-
+const successModal = document.querySelector("#success-modal");
 // console.log(emailModal);
 
 formEl.addEventListener("change", calculateWork);
@@ -92,5 +92,29 @@ formEl.addEventListener("submit", function (event) {
 
 const closeButtons = document.querySelectorAll('.modal-close-btn');
 
-console.log(closeButtons);
+// console.log(closeButtons);
 // formEl.addEventListener("change", getFormValues);
+closeButtons.forEach( function(closeButton){
+closeButton.addEventListener('click', function(){
+emailModal.classList.remove('modal-active');
+successModal.classList.remove('modal-active');
+});
+});
+
+const modalEmailContainer = document.querySelector('#modal-email-container');
+
+modalEmailContainer.addEventListener('submit', function(event){
+  event.preventDefault();
+
+  const userEmailInput = document.querySelector('#user-email');
+
+  if (userEmailInput.value) {
+
+  emailModal.classList.remove('modal-active');
+  successModal.classList.add('modal-active');
+}
+
+const inputContainer = document.querySelector('#email-input-container');
+
+inputContainer.classList.add('email-input-container-error')
+});

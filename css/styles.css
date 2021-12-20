@@ -352,7 +352,6 @@ h1 {
   width: 100%;
 }
 .user-email {
-  margin-bottom: 115px;
   width: 100%;
   font-family: Montserrat, Arial, sans-serif;
   margin-top: 15px;
@@ -362,6 +361,26 @@ h1 {
   border: none;
   outline: none;
   border-bottom: 1px solid #4f4f4f;
+}
+
+.email-input-container {
+  margin-bottom: 115px;
+}
+.email-error-text {
+  color: #ea1238;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+  display: none;
+}
+
+.email-input-container-error .email-error-text {
+  display: block;
+}
+
+.email-input-container-error .user-email {
+  border-bottom: 1px solid #ea1238;
 }
 
 .modal-submit-btn {

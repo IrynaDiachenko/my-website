@@ -163,8 +163,11 @@
                 одного часа</h4>
 
             <form action="#" class="modal-container-form">
-                <label for="user-email" class="user-email-title">Email</label>
-                <input type="email" name="user-email" id="user-email" class="user-email" placeholder="Укажите emil">
+                <div class="email-input-container" id="email-input-container">
+                    <label for="user-email" class="user-email-title">Email</label>
+                    <input type="email" name="user-email" id="user-email" class="user-email" placeholder="Укажите emil">
+                    <p class="email-error-text">Проверьте email</p>
+                </div>
 
 
                 <button type="submit" class="modal-submit-btn">Отправить</button>
@@ -174,7 +177,7 @@
 
 
 
-    <div class="modal-bgd ">
+    <div class="modal-bgd id=success-modal">
 
         <div class="modal-container">
             <button class="modal-close-btn">
