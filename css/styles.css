@@ -74,6 +74,10 @@ h1 {
   cursor: pointer;
 }
 
+.social-link {
+  text-decoration: none;
+}
+
 .experience-section {
   width: 268px;
   display: flex;
