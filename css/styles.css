@@ -3,6 +3,10 @@ body {
   background: #f3f5f9;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
 h1 {
   color: #4f4f4f;
 }
@@ -313,6 +317,8 @@ h1 {
 
   pointer-events: none;
   opacity: 0;
+
+  transition: opacity 0.3s ease-in-out;
 }
 
 .modal-container {
@@ -365,6 +371,7 @@ h1 {
 
 .email-input-container {
   margin-bottom: 115px;
+  height: 115px;
 }
 .email-error-text {
   color: #ea1238;
