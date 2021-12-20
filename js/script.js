@@ -30,15 +30,15 @@ function getFormValues() {
 
   const pmEl = document.querySelector("#project-magement");
   const designEl = document.querySelector("#design");
-  const pmEl = document.querySelector("#development");
-  const designEl = document.querySelector("#qa");
+  const developmentEl = document.querySelector("#development");
+  const qaEl = document.querySelector("#qa");
 
   console.log(websiteTipeElement.value);
 
-  console.log(pmEl.cheked);
-  console.log(designEl.cheked);
-  console.log(developmentEl.cheke);
-  console.log(qaEl.cheked);
+  console.log(pmEl.checked);
+  console.log(designEl.checked);
+  console.log(developmentEl.checked);
+  console.log(qaEl.checked);
 
   return {
     websiteType: websiteTipeElement.value,
@@ -69,10 +69,10 @@ function calculateWork() {
   if (values.qa) {
     totalPrice = totalPrice + workTypes.qa;
   }
-  El = document.querySelector("#total-price");
-  totalPriceEl.rextContent = totalPrice;
+  const totalPriceEl = document.querySelector("#total-price");
+  totalPriceEl.textContent = totalPrice;
 
-  console.log(workTypes);
+  console.log(totalPrice);
 }
 
 getFormValues();
@@ -87,34 +87,47 @@ formEl.addEventListener("change", calculateWork);
 formEl.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  emailModal.classList.add('modal-active';)
+  emailModal.classList.add("modal-active");
 });
 
-const closeButtons = document.querySelectorAll('.modal-close-btn');
+const closeButtons = document.querySelectorAll(".modal-close-btn");
 
 // console.log(closeButtons);
 // formEl.addEventListener("change", getFormValues);
-closeButtons.forEach( function(closeButton){
-closeButton.addEventListener('click', function(){
-emailModal.classList.remove('modal-active');
-successModal.classList.remove('modal-active');
-});
+closeButtons.forEach(function (closeBtn) {
+  closeBtn.addEventListener("click", function () {
+    emailModal.classList.remove("modal-active");
+    successModal.classList.remove("modal-active");
+  });
 });
 
-const modalEmailContainer = document.querySelector('#modal-email-container');
+const modalEmailContainer = document.querySelector("#modal-email-container");
 
-modalEmailContainer.addEventListener('submit', function(event){
+modalEmailContainer.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const userEmailInput = document.querySelector('#user-email');
+  const userEmailInput = document.querySelector("#user-email");
 
   if (userEmailInput.value) {
+    const formData = new FormData(formEl);
 
-  emailModal.classList.remove('modal-active');
-  successModal.classList.add('modal-active');
-}
+    formData.append("Email", userEmailInput.value);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(function () {
+        emailModal.classList.remove("modal-active");
+        successModal.classList.add("modal-active");
+      })
 
-const inputContainer = document.querySelector('#email-input-container');
+      .catch((error) => alert(error));
 
-inputContainer.classList.add('email-input-container-error')
+    return;
+  }
+
+  const inputContainer = document.querySelector("#email-input-container");
+
+  inputContainer.classList.add("email-input-container-error");
 });

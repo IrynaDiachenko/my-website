@@ -116,22 +116,22 @@
                     <p class="project-price-form-field-title">Тип работ</p>
 
                     <div class="activity-tipe-item">
-                        <input type="checkbox" name="project-menegment" id="project-menegment"
+                        <input type="checkbox" name="project-menegment" id="project-magement"
                             class="activity-tipe-checkbox">
                         <label for="project-menegment" class="activity-tipe-title">Project menegment</label>
                     </div>
 
                     <div class="activity-tipe-item">
-                        <input checked type="checkbox" name="design" id="design" class="activity-tipe-checkbox">
+                        <input checked type="checkbox" name="Design" id="design" class="activity-tipe-checkbox">
                         <label for="design" class="activity-tipe-title">Design</label>
                     </div>
 
                     <div class="activity-tipe-item">
-                        <input type="checkbox" name="development" id="development" class="activity-tipe-checkbox">
+                        <input type="checkbox" name="Development" id="development" class="activity-tipe-checkbox">
                         <label for="development" class="activity-tipe-title">Development</label>
                     </div>
                     <div class="activity-tipe-item">
-                        <input type="checkbox" name="qa" id="qa" class="activity-tipe-checkbox">
+                        <input type="checkbox" name="Qa" id="qa" class="activity-tipe-checkbox">
                         <label for="qa" class="activity-tipe-title">QA</label>
                     </div>
 
@@ -143,6 +143,8 @@
                                 id="total-price">0</span></span></p>
                     </div>
 
+                    <input type="hidden" name="Email">
+
                     <div class="project-price-calculate-btn-containet">
                         <button class="project-price-calculate-btn">Отправить запрос</button>
                     </div>
@@ -152,7 +154,7 @@
 
 
     <!-- MODAL SECTION -->
-    <div class="modal-bgd modal-email">
+    <div class="modal-bgd" id="modal-email">
 
         <div class="modal-container">
             <button class="modal-close-btn">
@@ -162,8 +164,8 @@
             <h4 class="modal-title">Я свяжусь с Вами на <br> протяжении
                 одного часа</h4>
 
-            <form action="#" class="modal-container-form">
-                <div class="email-input-container" id="email-input-container">
+            <form action="#" class="modal-container-form" id="modal-email-container">
+                <div class="email-input-container">
                     <label for="user-email" class="user-email-title">Email</label>
                     <input type="email" name="user-email" id="user-email" class="user-email" placeholder="Укажите emil">
                     <p class="email-error-text">Проверьте email</p>
@@ -177,7 +179,7 @@
 
 
 
-    <div class="modal-bgd id=success-modal">
+    <div class="modal-bgd" id="success-modal">
 
         <div class="modal-container">
             <button class="modal-close-btn">
